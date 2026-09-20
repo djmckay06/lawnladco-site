@@ -3,6 +3,7 @@ import {
   ArrowRight,
   Award,
   BadgeCheck,
+  Brain,
   CalendarCheck,
   Check,
   ChevronDown,
@@ -11,9 +12,11 @@ import {
   Facebook,
   Heart,
   Instagram,
+  Leaf,
   Mail,
   MapPin,
   Menu,
+  PackageOpen,
   Phone,
   Scissors,
   ShieldCheck,
@@ -23,6 +26,7 @@ import {
   Star,
   Tractor,
   Trophy,
+  Droplets,
   X,
   Zap,
 } from 'lucide-react'
@@ -129,6 +133,50 @@ const equipment = [
   { icon: Shovel, name: 'Topdresser', price: '350', note: 'Spread soil evenly & efficiently' },
 ]
 
+const ecosystem = [
+  {
+    icon: Brain,
+    eyebrow: 'LawnBrain',
+    title: 'Know what your lawn needs.',
+    description:
+      'Upload photos or a short video, get an AI-assisted lawn assessment and turn it into a practical care plan.',
+    href: '/lawnbrain',
+    action: 'Open LawnBrain',
+  },
+  {
+    icon: Trophy,
+    eyebrow: 'Lawn League',
+    title: 'Rate it. Improve it. Climb.',
+    description:
+      'Track your Lawn Rating, measure improvement and see how your lawn stacks up from suburb to Australia.',
+    href: '/lawnleague',
+    action: 'Join Lawn League',
+  },
+  {
+    icon: PackageOpen,
+    eyebrow: 'Lawn Lad Products',
+    title: 'A simpler product system.',
+    description:
+      'Explore the Lawn Lad range being built around the same needs LawnBrain identifies in your lawn.',
+    href: '#products',
+    action: 'Explore the range',
+  },
+]
+
+const productFamilies = [
+  { name: 'FEED', role: 'Core lawn nutrition', group: 'Core range', icon: Sprout },
+  { name: 'GREEN', role: 'Colour and iron support', group: 'Core range', icon: Sparkles },
+  { name: 'ROOT', role: 'Soil and root conditioning', group: 'Core range', icon: Leaf },
+  { name: 'HYDRATE', role: 'Wetting and water movement', group: 'Core range', icon: Droplets },
+  { name: 'REVIVE', role: 'Recovery and soil tonic', group: 'Core range', icon: Heart },
+  { name: 'PET PEE', role: 'Urine spot recovery and soil support', group: 'Core range', icon: ShieldCheck },
+  { name: 'WEED', role: 'Targeted weed control', group: 'Specialist range', icon: Leaf },
+  { name: 'BARRIER', role: 'Pre-emergent protection', group: 'Specialist range', icon: ShieldCheck },
+  { name: 'GRUB', role: 'Insect treatment', group: 'Specialist range', icon: Sprout },
+  { name: 'SHIELD', role: 'Preventative pest protection', group: 'Specialist range', icon: ShieldCheck },
+  { name: 'DEFEND', role: 'Disease treatment', group: 'Specialist range', icon: ShieldCheck },
+]
+
 const initialFields = {
   name: '',
   phone: '',
@@ -184,10 +232,11 @@ function HomePage() {
         </a>
 
         <nav className="desktop-nav" aria-label="Primary navigation">
-          <a href="#about">Why us</a>
           <a href="#services">Services</a>
           <a href="#packages">Packages</a>
-          <a href="#hire">Equipment hire</a>
+          <a href="/lawnbrain">LawnBrain</a>
+          <a href="/lawnleague">Lawn League</a>
+          <a href="#products">Products</a>
           <a href="#contact">Contact</a>
         </nav>
 
@@ -223,6 +272,10 @@ function HomePage() {
             <Phone size={16} />
             <span>0417 225 479</span>
           </a>
+          <a className="header-scan" href="/scan">
+            <Brain size={16} />
+            <span>Scan my lawn</span>
+          </a>
         </div>
 
         <button
@@ -240,6 +293,9 @@ function HomePage() {
             <a href="#about" onClick={closeMenu}>Why us</a>
             <a href="#services" onClick={closeMenu}>Services</a>
             <a href="#packages" onClick={closeMenu}>Packages</a>
+            <a href="/lawnbrain" onClick={closeMenu}>LawnBrain</a>
+            <a href="/lawnleague" onClick={closeMenu}>Lawn League</a>
+            <a href="#products" onClick={closeMenu}>Products</a>
             <a href="#hire" onClick={closeMenu}>Equipment hire</a>
             <a href="#contact" onClick={closeMenu}>Contact</a>
             <a className="mobile-nav__call" href="tel:0417225479" onClick={closeMenu}>
@@ -272,7 +328,8 @@ function HomePage() {
                 <TikTokIcon size={18} />
               </a>
             </div>
-            <a href="#contact" className="button button--gold" onClick={closeMenu}>Get a free quote</a>
+            <a href="/scan" className="button button--gold" onClick={closeMenu}>Scan my lawn</a>
+            <a href="#contact" className="button button--ghost" onClick={closeMenu}>Get a free quote</a>
           </nav>
         )}
       </header>
@@ -295,11 +352,11 @@ function HomePage() {
             Reliable lawn maintenance, considered turf care and complete renovations for homes across the Wide Bay.
           </p>
           <div className="hero__actions reveal reveal--4">
-            <a href="#contact" className="button button--gold">
-              Get a free quote <ArrowRight size={18} />
+            <a href="/scan" className="button button--gold">
+              Scan my lawn <Brain size={18} />
             </a>
-            <a href="#about" className="button button--ghost">
-              Why Lawn Lad <ChevronDown size={18} />
+            <a href="#contact" className="button button--ghost">
+              Get a free quote <ArrowRight size={18} />
             </a>
           </div>
         </div>
@@ -321,6 +378,39 @@ function HomePage() {
         <div><CalendarCheck /><span><strong>Reliable</strong> scheduling</span></div>
         <div><MapPin /><span><strong>Genuinely</strong> local</span></div>
         <div><ShieldCheck /><span><strong>Fully</strong> insured</span></div>
+      </section>
+
+      <section className="ecosystem-section" id="ecosystem">
+        <div className="section-heading section-heading--centered ecosystem-heading">
+          <span className="section-kicker">The Lawn Lad ecosystem</span>
+          <h2>More than mowing.<br /><em>Meet your lawn toolkit.</em></h2>
+          <p>Start with a scan, build a plan, improve the lawn and track the climb. Lawn Lad Co. connects the digital tools, products and hands-on help in one place.</p>
+        </div>
+
+        <div className="ecosystem-grid">
+          {ecosystem.map((item) => {
+            const Icon = item.icon
+            return (
+              <article className="ecosystem-card" key={item.eyebrow}>
+                <div className="ecosystem-card__icon"><Icon /></div>
+                <span>{item.eyebrow}</span>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+                <a href={item.href}>{item.action} <ArrowRight size={16} /></a>
+              </article>
+            )
+          })}
+        </div>
+
+        <div className="ecosystem-flow" aria-label="Lawn Lad ecosystem flow">
+          <span>Discover</span><ArrowRight size={15} />
+          <span>Scan</span><ArrowRight size={15} />
+          <span>Plan</span><ArrowRight size={15} />
+          <span>Treat</span><ArrowRight size={15} />
+          <span>Improve</span><ArrowRight size={15} />
+          <span>Rank</span><ArrowRight size={15} />
+          <span>Repeat</span>
+        </div>
       </section>
 
       <section className="why-us-section" id="about">
@@ -492,6 +582,40 @@ function HomePage() {
         <p className="pricing-note">Pricing varies with lawn size, access and condition. We confirm your price before work begins.</p>
       </section>
 
+      <section className="products-section" id="products">
+        <div className="section-heading section-heading--split">
+          <div>
+            <span className="section-kicker">Lawn Lad product system</span>
+            <h2>Use what your lawn <em>actually needs.</em></h2>
+          </div>
+          <p>The Lawn Lad range is being developed to work alongside LawnBrain recommendations, with clear roles rather than a shelf full of guesswork.</p>
+        </div>
+
+        <div className="product-grid">
+          {productFamilies.map((product) => {
+            const Icon = product.icon
+            return (
+              <article className="product-card" key={product.name}>
+                <div className="product-card__top">
+                  <div className="product-card__icon"><Icon /></div>
+                  <span>{product.group}</span>
+                </div>
+                <h3>{product.name}</h3>
+                <p>{product.role}</p>
+              </article>
+            )
+          })}
+        </div>
+
+        <div className="product-note">
+          <div>
+            <strong>Product range in development.</strong>
+            <p>Final formulations, pack sizes, pricing, availability, labels and directions will be published before products are offered for sale.</p>
+          </div>
+          <a href="/scan" className="button button--dark">Get a LawnBrain recommendation <Brain size={17} /></a>
+        </div>
+      </section>
+
       <section className="equipment-section" id="hire">
         <div className="section-heading section-heading--split section-heading--light">
           <div>
@@ -645,6 +769,9 @@ function HomePage() {
           <a href="#about">Why us</a>
           <a href="#services">Services</a>
           <a href="#packages">Packages</a>
+          <a href="/lawnbrain">LawnBrain</a>
+          <a href="/lawnleague">Lawn League</a>
+          <a href="#products">Products</a>
           <a href="#hire">Equipment hire</a>
           <a href="#contact">Contact</a>
         </div>
