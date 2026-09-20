@@ -270,9 +270,9 @@ function HomePage() {
               <TikTokIcon size={16} />
             </a>
             <a
-              href="tel:0417225479"
-              aria-label="Call Lawn Lad Co. on 0417 225 479"
-              title="Call 0417 225 479"
+              href="tel:0431913822"
+              aria-label="Call Lawn Lad Co. on 0431 913 822"
+              title="Call 0431 913 822"
             >
               <Phone size={16} />
             </a>
@@ -303,9 +303,9 @@ function HomePage() {
             <a href="#products" onClick={closeMenu}>Products</a>
             <a href="#hire" onClick={closeMenu}>Equipment hire</a>
             <a href="#contact" onClick={closeMenu}>Contact</a>
-            <a className="mobile-nav__call" href="tel:0417225479" onClick={closeMenu}>
+            <a className="mobile-nav__call" href="tel:0431913822" onClick={closeMenu}>
               <Phone size={18} />
-              <span>Call 0417 225 479</span>
+              <span>Call 0431 913 822</span>
             </a>
             <div className="mobile-nav__social" aria-label="Social media">
               <a
@@ -702,7 +702,7 @@ function HomePage() {
           <p>Tell us what you need and where you’re located. We’ll get back to you with the next best step.</p>
 
           <div className="contact-list">
-            <a href="tel:0417225479"><span><Phone /></span><div><small>Call or text</small><strong>0417 225 479</strong></div></a>
+            <a href="tel:0431913822"><span><Phone /></span><div><small>Call or text</small><strong>0431 913 822</strong></div></a>
             <a href="mailto:info@lawnladco.com.au"><span><Mail /></span><div><small>Email</small><strong>info@lawnladco.com.au</strong></div></a>
             <div><span><MapPin /></span><div><small>Service area</small><strong>Innes Park to Headlands</strong></div></div>
           </div>
@@ -748,7 +748,7 @@ function HomePage() {
               </div>
               <label>Anything else?<textarea name="message" value={fields.message} onChange={handleChange} placeholder="Lawn size, condition, access or preferred timing…" rows={4} /></label>
 
-              {formStatus === 'error' && <p className="form-error" role="alert">Something went wrong. Please try again or call 0417 225 479.</p>}
+              {formStatus === 'error' && <p className="form-error" role="alert">Something went wrong. Please try again or call 0431 913 822.</p>}
 
               <button className="button button--gold form-submit" type="submit" disabled={formStatus === 'submitting'}>
                 {formStatus === 'submitting' ? 'Sending request…' : 'Request my free quote'}
