@@ -244,7 +244,7 @@ function HomePage() {
         </nav>
 
         <div className="header-right">
-          <div className="header-social" aria-label="Social media">
+          <div className="header-social" aria-label="Social and contact links">
             <a
               href="https://www.instagram.com/lawnladco2026"
               target="_blank"
