@@ -55,6 +55,10 @@ export const Route = createFileRoute('/')({
   component: HomePage,
 })
 
+const LAWNBRAIN_URL = 'https://lawnbrain.base44.app/home?source=lawnladco'
+const LAWNLEAGUE_URL = 'https://lawnbrain.base44.app/league?source=lawnladco'
+const LAWN_SCAN_URL = 'https://lawnbrain.base44.app/register?source=lawnladco'
+
 const services = [
   {
     number: '01',
@@ -139,7 +143,7 @@ const ecosystem = [
     title: 'Know what your lawn needs.',
     description:
       'Upload photos or a short video, get an AI-assisted lawn assessment and turn it into a practical care plan.',
-    href: '/lawnbrain',
+    href: LAWNBRAIN_URL,
     action: 'Open LawnBrain',
   },
   {
@@ -148,7 +152,7 @@ const ecosystem = [
     title: 'Rate it. Improve it. Climb.',
     description:
       'Track your Lawn Rating, measure improvement and see how your lawn stacks up from suburb to Australia.',
-    href: '/lawnleague',
+    href: LAWNLEAGUE_URL,
     action: 'Join Lawn League',
   },
   {
@@ -233,8 +237,8 @@ function HomePage() {
         <nav className="desktop-nav" aria-label="Primary navigation">
           <a href="#services">Services</a>
           <a href="#packages">Packages</a>
-          <a href="/lawnbrain">LawnBrain</a>
-          <a href="/lawnleague">Lawn League</a>
+          <a href={LAWNBRAIN_URL}>LawnBrain</a>
+          <a href={LAWNLEAGUE_URL}>Lawn League</a>
           <a href="#products">Products</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -265,13 +269,15 @@ function HomePage() {
             >
               <TikTokIcon size={16} />
             </a>
+            <a
+              href="tel:0417225479"
+              aria-label="Call Lawn Lad Co. on 0417 225 479"
+              title="Call 0417 225 479"
+            >
+              <Phone size={16} />
+            </a>
           </div>
-
-          <a className="header-call" href="tel:0417225479">
-            <Phone size={16} />
-            <span>0417 225 479</span>
-          </a>
-          <a className="header-scan" href="/scan">
+          <a className="header-scan" href={LAWN_SCAN_URL}>
             <Brain size={16} />
             <span>Scan my lawn</span>
           </a>
@@ -292,8 +298,8 @@ function HomePage() {
             <a href="#about" onClick={closeMenu}>Why us</a>
             <a href="#services" onClick={closeMenu}>Services</a>
             <a href="#packages" onClick={closeMenu}>Packages</a>
-            <a href="/lawnbrain" onClick={closeMenu}>LawnBrain</a>
-            <a href="/lawnleague" onClick={closeMenu}>Lawn League</a>
+            <a href={LAWNBRAIN_URL} onClick={closeMenu}>LawnBrain</a>
+            <a href={LAWNLEAGUE_URL} onClick={closeMenu}>Lawn League</a>
             <a href="#products" onClick={closeMenu}>Products</a>
             <a href="#hire" onClick={closeMenu}>Equipment hire</a>
             <a href="#contact" onClick={closeMenu}>Contact</a>
@@ -327,7 +333,7 @@ function HomePage() {
                 <TikTokIcon size={18} />
               </a>
             </div>
-            <a href="/scan" className="button button--gold" onClick={closeMenu}>Scan my lawn</a>
+            <a href={LAWN_SCAN_URL} className="button button--gold" onClick={closeMenu}>Scan my lawn</a>
             <a href="#contact" className="button button--ghost" onClick={closeMenu}>Get a free quote</a>
           </nav>
         )}
@@ -351,7 +357,7 @@ function HomePage() {
             Reliable lawn maintenance, considered turf care and complete renovations for homes across the Wide Bay.
           </p>
           <div className="hero__actions reveal reveal--4">
-            <a href="/scan" className="button button--gold">
+            <a href={LAWN_SCAN_URL} className="button button--gold">
               Scan my lawn <Brain size={18} />
             </a>
             <a href="#contact" className="button button--ghost">
@@ -611,7 +617,7 @@ function HomePage() {
             <strong>Product range in development.</strong>
             <p>Final formulations, pack sizes, pricing, availability, labels and directions will be published before products are offered for sale.</p>
           </div>
-          <a href="/scan" className="button button--dark">Get a LawnBrain recommendation <Brain size={17} /></a>
+          <a href={LAWN_SCAN_URL} className="button button--dark">Get a LawnBrain recommendation <Brain size={17} /></a>
         </div>
       </section>
 
@@ -768,8 +774,8 @@ function HomePage() {
           <a href="#about">Why us</a>
           <a href="#services">Services</a>
           <a href="#packages">Packages</a>
-          <a href="/lawnbrain">LawnBrain</a>
-          <a href="/lawnleague">Lawn League</a>
+          <a href={LAWNBRAIN_URL}>LawnBrain</a>
+          <a href={LAWNLEAGUE_URL}>Lawn League</a>
           <a href="#products">Products</a>
           <a href="#hire">Equipment hire</a>
           <a href="#contact">Contact</a>
