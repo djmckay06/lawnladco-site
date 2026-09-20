@@ -6,7 +6,6 @@ import {
   Brain,
   CalendarCheck,
   Check,
-  ChevronDown,
   CircleDollarSign,
   Clock3,
   Facebook,
