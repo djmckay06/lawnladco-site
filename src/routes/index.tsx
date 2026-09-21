@@ -345,29 +345,23 @@ function HomePage() {
         <div className="hero__grid" aria-hidden="true" />
 
         <div className="hero__inner">
-          <div className="hero__brand reveal reveal--1">
-            <img
-              src="/images/lawn-lad-co-logo.webp"
-              alt="Lawn Lad Co."
-              width="420"
-              height="361"
-              fetchPriority="high"
-            />
-          </div>
+          <div className="hero__left">
+            <div className="hero__brand reveal reveal--1">
+              <img
+                src="/images/lawn-lad-co-logo.webp"
+                alt="Lawn Lad Co."
+                width="420"
+                height="361"
+                fetchPriority="high"
+              />
+            </div>
 
-          <div className="hero__content">
-            <div className="eyebrow reveal reveal--1">
+            <div className="eyebrow hero__locations reveal reveal--2">
               <span className="eyebrow__dot" />
               Innes Park · Coral Cove · Bargara · Headlands
             </div>
-            <h1 className="reveal reveal--2">
-              Good lawns.
-              <span>Done properly.</span>
-            </h1>
-            <p className="hero__lead reveal reveal--3">
-              Reliable lawn maintenance, considered turf care and complete renovations for homes across the Wide Bay.
-            </p>
-            <div className="hero__actions reveal reveal--4">
+
+            <div className="hero__actions hero__actions--left reveal reveal--3">
               <a href={LAWN_SCAN_URL} className="button button--gold">
                 Scan my lawn <Brain size={18} />
               </a>
@@ -375,6 +369,16 @@ function HomePage() {
                 Get a free quote <ArrowRight size={18} />
               </a>
             </div>
+          </div>
+
+          <div className="hero__content">
+            <h1 className="reveal reveal--2">
+              Good lawns.
+              <span>Done properly.</span>
+            </h1>
+            <p className="hero__lead reveal reveal--3">
+              Reliable lawn maintenance, considered turf care and complete renovations for homes across the Wide Bay.
+            </p>
           </div>
         </div>
 
