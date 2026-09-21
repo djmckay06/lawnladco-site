@@ -315,3 +315,5 @@ footer { position: relative; padding: 70px clamp(22px, 7vw, 110px) 25px; color: 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }.reveal, .hero__media { animation: none; opacity: 1; transform: none; }.button, .service-card { transition: none; }
 }
+
+/* deploy-refresh: hero-logo */
