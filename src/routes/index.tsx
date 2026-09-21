@@ -356,11 +356,6 @@ function HomePage() {
               />
             </div>
 
-            <div className="eyebrow hero__locations reveal reveal--2">
-              <span className="eyebrow__dot" />
-              Innes Park · Coral Cove · Bargara · Headlands
-            </div>
-
             <div className="hero__actions hero__actions--left reveal reveal--3">
               <a href={LAWN_SCAN_URL} className="button button--gold">
                 Scan my lawn <Brain size={18} />
@@ -372,6 +367,10 @@ function HomePage() {
           </div>
 
           <div className="hero__content">
+            <div className="eyebrow hero__locations reveal reveal--1">
+              <span className="eyebrow__dot" />
+              Innes Park · Coral Cove · Bargara · Headlands
+            </div>
             <h1 className="reveal reveal--2">
               Good lawns.
               <span>Done properly.</span>
