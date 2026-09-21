@@ -234,46 +234,6 @@ function HomePage() {
             <span className="brand-mark__name">Lawn Lad</span>
             <span className="brand-mark__company">Co.</span>
           </a>
-
-          <div className="header-actions">
-            <div className="header-social" aria-label="Social and contact links">
-              <a
-                href="https://www.instagram.com/lawnladco2026"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram (@lawnladco2026)"
-              >
-                <Instagram size={16} />
-              </a>
-              <a
-                href="https://www.facebook.com/profile.php?id=61593666958921"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-              >
-                <Facebook size={16} />
-              </a>
-              <a
-                href="https://www.tiktok.com/@thelawnkid"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="TikTok (@thelawnkid)"
-              >
-                <TikTokIcon size={16} />
-              </a>
-              <a
-                href="tel:0431913822"
-                aria-label="Call Lawn Lad Co. on 0431 913 822"
-                title="Call 0431 913 822"
-              >
-                <Phone size={16} />
-              </a>
-            </div>
-            <a className="header-scan" href={LAWN_SCAN_URL}>
-              <Brain size={16} />
-              <span>Scan my lawn</span>
-            </a>
-          </div>
         </div>
 
         <nav className="desktop-nav" aria-label="Primary navigation">
@@ -284,6 +244,46 @@ function HomePage() {
           <a href="#products">Products</a>
           <a href="#contact">Contact</a>
         </nav>
+
+        <div className="header-actions">
+          <div className="header-social" aria-label="Social and contact links">
+            <a
+              href="https://www.instagram.com/lawnladco2026"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram (@lawnladco2026)"
+            >
+              <Instagram size={16} />
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61593666958921"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <Facebook size={16} />
+            </a>
+            <a
+              href="https://www.tiktok.com/@thelawnkid"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok (@thelawnkid)"
+            >
+              <TikTokIcon size={16} />
+            </a>
+            <a
+              href="tel:0431913822"
+              aria-label="Call Lawn Lad Co. on 0431 913 822"
+              title="Call 0431 913 822"
+            >
+              <Phone size={16} />
+            </a>
+          </div>
+          <a className="header-scan" href={LAWN_SCAN_URL}>
+            <Brain size={16} />
+            <span>Scan my lawn</span>
+          </a>
+        </div>
 
         <button
           className="menu-button"
