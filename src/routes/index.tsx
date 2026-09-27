@@ -359,9 +359,12 @@ function HomePage() {
             </div>
 
             <div className="hero__actions hero__actions--left reveal reveal--3">
-              <a href={LAWN_SCAN_URL} className="button button--gold">
-                Scan my lawn <Brain size={18} />
-              </a>
+              <div className="hero__scan-group">
+                <a href={LAWN_SCAN_URL} className="button button--gold">
+                  Scan my lawn <Brain size={18} />
+                </a>
+                <span className="hero__scan-note">Measure • Diagnose • Price</span>
+              </div>
               <a href="#contact" className="button button--ghost">
                 Get a free quote <ArrowRight size={18} />
               </a>
@@ -371,14 +374,14 @@ function HomePage() {
           <div className="hero__content">
             <div className="eyebrow hero__locations reveal reveal--1">
               <span className="eyebrow__dot" />
-              Innes Park · Coral Cove · Bargara · Headlands
+              Servicing Innes Park · Coral Cove · Bargara · Headlands
             </div>
             <h1 className="reveal reveal--2">
               Good lawns.
               <span>Done properly.</span>
             </h1>
             <p className="hero__lead reveal reveal--3">
-              Reliable lawn maintenance, considered turf care and complete renovations for homes across the Wide Bay.
+              Reliable lawn maintenance, specialist turf care and complete lawn renovations across the Wide Bay.
             </p>
           </div>
         </div>
@@ -394,6 +397,11 @@ function HomePage() {
           <span>Family owned & fully insured</span>
         </div>
       </section>
+
+      <div className="mobile-action-bar" aria-label="Quick actions">
+        <a href={LAWN_SCAN_URL}><Brain size={16} /> Scan lawn</a>
+        <a href="#contact"><ArrowRight size={16} /> Get quote</a>
+      </div>
 
       <section className="trust-strip" aria-label="Service promises">
         <div><BadgeCheck /><span><strong>Quality</strong> guaranteed</span></div>
