@@ -281,7 +281,7 @@ function GreenFleetPage() {
               </div>
               <a
                 href="mailto:lawnladco@gmail.com?subject=Green%20Fleet%20Partnership"
-                className="mt-6 inline-flex min-h-12 items-center gap-2 bg-[#0c2919] px-6 text-sm font-extrabold uppercase tracking-[.08em] text-white transition hover:bg-[#173f27]"
+                className="mt-6 inline-flex min-h-12 items-center gap-2 bg-[#0c2919] px-6 text-sm font-extrabold uppercase tracking-[.08em] !text-[#d6ac47] transition hover:bg-[#173f27] hover:!text-[#efcc73]"
               >
                 Become a Green Fleet partner <ArrowRight size={18} />
               </a>
