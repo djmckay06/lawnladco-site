@@ -241,6 +241,7 @@ function HomePage() {
           <a href="#packages">Packages</a>
           <a href={LAWNBRAIN_URL}>LawnBrain</a>
           <a href={LAWNLEAGUE_URL}>Lawn League</a>
+          <a href="/green-fleet">Green Fleet</a>
           <a href="#products">Products</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -302,6 +303,7 @@ function HomePage() {
             <a href="#packages" onClick={closeMenu}>Packages</a>
             <a href={LAWNBRAIN_URL} onClick={closeMenu}>LawnBrain</a>
             <a href={LAWNLEAGUE_URL} onClick={closeMenu}>Lawn League</a>
+            <a href="/green-fleet" onClick={closeMenu}>Green Fleet</a>
             <a href="#products" onClick={closeMenu}>Products</a>
             <a href="#hire" onClick={closeMenu}>Equipment hire</a>
             <a href="#contact" onClick={closeMenu}>Contact</a>
