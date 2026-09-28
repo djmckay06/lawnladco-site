@@ -55,9 +55,9 @@ export const Route = createFileRoute('/')({
   component: HomePage,
 })
 
-const LAWNBRAIN_URL = 'https://lawnbrain.base44.app/home?source=lawnladco'
-const LAWNLEAGUE_URL = 'https://lawnbrain.base44.app/league?source=lawnladco'
-const LAWN_SCAN_URL = 'https://lawnbrain.base44.app/register?source=lawnladco'
+const LAWNBRAIN_URL = 'https://lawnbrain.base44.app/#/home?source=lawnladco'
+const LAWNLEAGUE_URL = 'https://lawnbrain.base44.app/#/league?source=lawnladco'
+const LAWN_SCAN_URL = 'https://lawnbrain.base44.app/#/register?source=lawnladco'
 
 const services = [
   {
