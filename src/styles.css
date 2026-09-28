@@ -296,12 +296,8 @@ footer { position: relative; padding: 70px clamp(22px, 7vw, 110px) 25px; color: 
 }
 
 @media (max-width: 620px) {
-  .site-header { position: sticky; grid-template-columns: 1fr 1fr 1fr; padding: 0 18px; }
-  .header-left { grid-column: 2; justify-self: center; }
-  .brand-mark { transform: none; }
-  .menu-button { grid-column: 3; justify-self: end; }
   html { scroll-padding-top: 70px; }.hero { min-height: auto; height: auto; padding: 40px 0 48px; }.hero__media { background-position: 62% center; }.hero__overlay { background: linear-gradient(90deg, rgba(5,24,13,.94), rgba(5,24,13,.62)), linear-gradient(0deg, rgba(5,24,13,.6), transparent); }
-  .hero__inner { width: calc(100% - 36px); margin-left: 18px; gap: 30px; }.hero__brand { max-width: 145px; }.hero__locations { margin: 0 0 16px; white-space: normal; max-width: 290px; font-size: 8px; line-height: 1.55; }.hero__actions--left { width: 100%; margin-top: 16px; }.hero__content { margin-left: 0; width: 100%; }.eyebrow { font-size: 9px; line-height: 1.5; }.hero h1 { margin-top: 0; font-size: clamp(38px, 11vw, 56px); line-height: 1.05; }.hero__lead { font-size: 15px; line-height: 1.6; }.hero__actions { flex-direction: column; align-items: stretch; }.hero__actions .button { width: 100%; }
+  .hero__inner { width: calc(100% - 36px); margin: 0 auto; gap: 30px; }.hero__left { align-items: center; text-align: center; }.hero__brand { max-width: 190px; margin: 0 auto; }.hero__locations { align-self: flex-start; text-align: left; }.hero__actions--left { align-self: stretch; }.hero__locations { margin: 0 0 16px; white-space: normal; max-width: 290px; font-size: 8px; line-height: 1.55; }.hero__actions--left { width: 100%; margin-top: 16px; }.hero__content { margin-left: 0; width: 100%; }.eyebrow { font-size: 9px; line-height: 1.5; }.hero h1 { margin-top: 0; font-size: clamp(38px, 11vw, 56px); line-height: 1.05; }.hero__lead { font-size: 15px; line-height: 1.6; }.hero__actions { flex-direction: column; align-items: stretch; }.hero__actions .button { width: 100%; }
   .trust-strip { grid-template-columns: 1fr; padding: 0 16px; border-bottom: none; }.trust-strip > div { min-height: 54px; padding: 12px 14px; justify-content: flex-start; font-size: 12px; border-left: 1px solid var(--line); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }.trust-strip > div:first-child { border-top: 1px solid var(--line); }.trust-strip svg { width: 18px; }
   .ecosystem-section { padding: 58px 18px; }
   .ecosystem-card { min-height: auto; padding: 24px; }
