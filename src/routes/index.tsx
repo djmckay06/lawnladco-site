@@ -11,7 +11,6 @@ import {
   Facebook,
   Heart,
   Instagram,
-  Leaf,
   Mail,
   MapPin,
   Menu,
@@ -25,11 +24,11 @@ import {
   Star,
   Tractor,
   Trophy,
-  Droplets,
   X,
   Zap,
 } from 'lucide-react'
 import { useState, type ChangeEvent, type FormEvent, type SVGProps } from 'react'
+import { ProductFamilyIcon } from '@/ProductFamilyIcon'
 
 function TikTokIcon({ size = 24, className = '', ...props }: SVGProps<SVGSVGElement> & { size?: number | string }) {
   return (
@@ -167,17 +166,17 @@ const ecosystem = [
 ]
 
 const productFamilies = [
-  { name: 'FEED', role: 'Core lawn nutrition', group: 'Core range', icon: Sprout },
-  { name: 'GREEN', role: 'Colour and iron support', group: 'Core range', icon: Sparkles },
-  { name: 'ROOT', role: 'Soil and root conditioning', group: 'Core range', icon: Leaf },
-  { name: 'HYDRATE', role: 'Wetting and water movement', group: 'Core range', icon: Droplets },
-  { name: 'REVIVE', role: 'Recovery and soil tonic', group: 'Core range', icon: Heart },
-  { name: 'PET PEE', role: 'Urine spot recovery and soil support', group: 'Core range', icon: ShieldCheck },
-  { name: 'WEED', role: 'Targeted weed control', group: 'Specialist range', icon: Leaf },
-  { name: 'BARRIER', role: 'Pre-emergent protection', group: 'Specialist range', icon: ShieldCheck },
-  { name: 'GRUB', role: 'Insect treatment', group: 'Specialist range', icon: Sprout },
-  { name: 'SHIELD', role: 'Preventative pest protection', group: 'Specialist range', icon: ShieldCheck },
-  { name: 'DEFEND', role: 'Disease treatment', group: 'Specialist range', icon: ShieldCheck },
+  { name: 'FEED', role: 'Core lawn nutrition', group: 'Core range' },
+  { name: 'GREEN', role: 'Colour and iron support', group: 'Core range' },
+  { name: 'ROOT', role: 'Soil and root conditioning', group: 'Core range' },
+  { name: 'HYDRATE', role: 'Wetting and water movement', group: 'Core range' },
+  { name: 'REVIVE', role: 'Recovery and soil tonic', group: 'Core range' },
+  { name: 'PET PEE', role: 'Urine spot recovery and soil support', group: 'Core range' },
+  { name: 'WEED', role: 'Targeted weed control', group: 'Specialist range' },
+  { name: 'BARRIER', role: 'Pre-emergent protection', group: 'Specialist range' },
+  { name: 'GRUB', role: 'Insect treatment', group: 'Specialist range' },
+  { name: 'SHIELD', role: 'Preventative pest protection', group: 'Specialist range' },
+  { name: 'DEFEND', role: 'Disease treatment', group: 'Specialist range' },
 ]
 
 const initialFields = {
@@ -616,19 +615,16 @@ function HomePage() {
         </div>
 
         <div className="product-grid">
-          {productFamilies.map((product) => {
-            const Icon = product.icon
-            return (
-              <article className="product-card" key={product.name}>
-                <div className="product-card__top">
-                  <div className="product-card__icon"><Icon /></div>
-                  <span>{product.group}</span>
-                </div>
-                <h3>{product.name}</h3>
-                <p>{product.role}</p>
-              </article>
-            )
-          })}
+          {productFamilies.map((product) => (
+            <article className="product-card" key={product.name}>
+              <div className="product-card__top">
+                <div className="product-card__icon"><ProductFamilyIcon code={product.name} /></div>
+                <span>{product.group}</span>
+              </div>
+              <h3>{product.name}</h3>
+              <p>{product.role}</p>
+            </article>
+          ))}
         </div>
 
         <div className="product-note">
