@@ -160,8 +160,8 @@ const ecosystem = [
     title: 'A simpler product system.',
     description:
       'Explore the Lawn Lad range being built around the same needs LawnBrain identifies in your lawn.',
-    href: '#products',
-    action: 'Explore the range',
+    href: '/shop',
+    action: 'Visit the shop',
   },
 ]
 
@@ -241,7 +241,7 @@ function HomePage() {
           <a href={LAWNBRAIN_URL}>LawnBrain</a>
           <a href={LAWNLEAGUE_URL}>Lawn League</a>
           <a href="/green-fleet">Green Fleet</a>
-          <a href="#products">Products</a>
+          <a href="/shop">Shop</a>
           <a href="#contact">Contact</a>
         </nav>
 
@@ -303,7 +303,7 @@ function HomePage() {
             <a href={LAWNBRAIN_URL} onClick={closeMenu}>LawnBrain</a>
             <a href={LAWNLEAGUE_URL} onClick={closeMenu}>Lawn League</a>
             <a href="/green-fleet" onClick={closeMenu}>Green Fleet</a>
-            <a href="#products" onClick={closeMenu}>Products</a>
+            <a href="/shop" onClick={closeMenu}>Shop</a>
             <a href="#hire" onClick={closeMenu}>Equipment hire</a>
             <a href="#contact" onClick={closeMenu}>Contact</a>
             <a className="mobile-nav__call" href="tel:0431913822" onClick={closeMenu}>
@@ -632,7 +632,7 @@ function HomePage() {
             <strong>Product range in development.</strong>
             <p>Final formulations, pack sizes, pricing, availability, labels and directions will be published before products are offered for sale.</p>
           </div>
-          <a href={LAWN_SCAN_URL} className="button button--dark">Get a LawnBrain recommendation <Brain size={17} /></a>
+          <div className="product-note__actions"><a href="/shop" className="button button--dark">Visit the shop <ArrowRight size={17} /></a><a href={LAWN_SCAN_URL} className="button button--outline">Get a LawnBrain recommendation <Brain size={17} /></a></div>
         </div>
       </section>
 
@@ -791,7 +791,7 @@ function HomePage() {
           <a href="#packages">Packages</a>
           <a href={LAWNBRAIN_URL}>LawnBrain</a>
           <a href={LAWNLEAGUE_URL}>Lawn League</a>
-          <a href="#products">Products</a>
+          <a href="/shop">Shop</a>
           <a href="#hire">Equipment hire</a>
           <a href="#contact">Contact</a>
         </div>
