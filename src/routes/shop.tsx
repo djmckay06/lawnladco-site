@@ -27,7 +27,7 @@ const collections = [
     eyebrow: 'Drop 01',
     title: 'Merch',
     description: 'Caps, sun hoodies, buffs, shirts and proper Lawn Lad kit as each piece becomes production-ready.',
-    href: `${SHOPIFY_STORE}/collections/merch`,
+    href: `${SHOPIFY_STORE}/collections/streetwear-drop-01`,
     status: 'Launching first',
     featured: true,
   },
@@ -155,7 +155,7 @@ function ShopPage() {
           <h2>Lawn Lad <em>Merch Drop.</em></h2>
           <p>Blackout cap. Sun hoodie. Buff. Workwear. The first sellable layer of the Lawn Lad brand is being built here.</p>
         </div>
-        <a href={`${SHOPIFY_STORE}/collections/merch`} target="_blank" rel="noopener noreferrer" className="shop-drop__cta">
+        <a href={`${SHOPIFY_STORE}/collections/streetwear-drop-01`} target="_blank" rel="noopener noreferrer" className="shop-drop__cta">
           <span>View merch collection</span><ArrowRight size={20} />
         </a>
       </section>
