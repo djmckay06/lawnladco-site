@@ -499,3 +499,71 @@ footer { position: relative; padding: 70px clamp(22px, 7vw, 110px) 25px; color: 
 @media (prefers-reduced-motion: reduce) {
   .shop-orbit,.shop-ticker > div { animation:none; }
 }
+
+
+/* Lawns & Lifestyle launch */
+.shop-launch { background: #f8f5ed; }
+.launch-hero { min-height: 640px; position: relative; overflow: hidden; display: grid; grid-template-columns: 1.08fr .92fr; align-items: center; padding: clamp(70px,8vw,120px) clamp(22px,7vw,112px); color: white; background: radial-gradient(circle at 80% 15%, rgba(214,172,71,.18), transparent 26%), linear-gradient(135deg,#071a10 0%,#0d2a1b 60%,#173f27 100%); }
+.launch-hero::before { content:''; position:absolute; inset:0; opacity:.12; background-image:linear-gradient(rgba(255,255,255,.25) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.25) 1px,transparent 1px); background-size:88px 88px; mask-image:linear-gradient(90deg,#000,transparent 72%); }
+.launch-hero__copy { position:relative; z-index:2; max-width:760px; }
+.launch-hero h1 { margin:16px 0 24px; font:800 clamp(64px,8.5vw,118px)/.84 var(--display); letter-spacing:-.07em; text-transform:uppercase; }
+.launch-hero h1 em { color:var(--gold); font-style:normal; }
+.launch-hero p { max-width:660px; margin:0; color:rgba(255,255,255,.68); font-size:17px; line-height:1.75; }
+.launch-hero__actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:34px; }
+.launch-hero__mark { position:relative; z-index:1; justify-self:end; width:min(36vw,450px); aspect-ratio:1; border:1px solid rgba(214,172,71,.28); border-radius:50%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; color:rgba(255,255,255,.1); box-shadow:0 0 0 28px rgba(214,172,71,.025),0 0 0 58px rgba(214,172,71,.018); transform:rotate(-7deg); }
+.launch-hero__mark span { font:800 clamp(38px,5vw,72px)/.9 var(--display); letter-spacing:-.05em; }
+.launch-hero__mark strong { color:rgba(214,172,71,.28); font:800 clamp(44px,6vw,84px)/1 var(--display); }
+
+.launch-lookbook { padding:clamp(78px,9vw,130px) clamp(22px,6vw,90px); background:#f8f5ed; }
+.launch-section-heading { max-width:860px; margin-bottom:42px; }
+.launch-section-heading > span { color:var(--leaf); font-size:10px; font-weight:900; letter-spacing:.14em; text-transform:uppercase; }
+.launch-section-heading h2 { margin:10px 0 14px; font:800 clamp(40px,5.2vw,70px)/.96 var(--display); letter-spacing:-.055em; color:var(--forest-deep); }
+.launch-section-heading h2 em { color:var(--gold); font-style:normal; }
+.launch-section-heading p { max-width:650px; color:var(--muted); line-height:1.7; }
+.launch-lookbook__frame { margin:0; border:1px solid rgba(18,33,23,.12); box-shadow:0 28px 70px rgba(12,41,25,.12); background:#0a2115; overflow:hidden; }
+.launch-lookbook__frame img { display:block; width:100%; height:auto; }
+
+.launch-lineup { padding:clamp(76px,9vw,130px) clamp(22px,7vw,112px); color:white; background:#0b2718; }
+.launch-section-heading--light > span { color:var(--gold); }
+.launch-section-heading--light h2 { color:white; }
+.launch-lineup__grid { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; }
+.launch-piece { position:relative; min-height:330px; padding:24px; display:flex; flex-direction:column; border:1px solid rgba(255,255,255,.1); background:rgba(255,255,255,.035); transition:transform .2s ease,border-color .2s ease,background .2s ease; overflow:hidden; }
+.launch-piece:hover { transform:translateY(-4px); border-color:rgba(214,172,71,.55); background:rgba(255,255,255,.055); }
+.launch-piece__number { position:absolute; right:12px; bottom:6px; color:rgba(255,255,255,.035); font:800 74px/1 var(--display); letter-spacing:-.08em; }
+.launch-piece__icon { width:46px; height:46px; display:grid; place-items:center; color:var(--forest-deep); background:var(--gold); }
+.launch-piece__icon svg { width:21px; }
+.launch-piece small { margin-top:26px; color:var(--gold-light); font-size:9px; font-weight:900; letter-spacing:.13em; text-transform:uppercase; }
+.launch-piece h3 { margin:8px 0 12px; font:800 23px/1.08 var(--display); letter-spacing:-.04em; }
+.launch-piece p { margin:0; color:rgba(255,255,255,.58); font-size:12px; line-height:1.6; }
+.launch-piece__status { margin-top:auto; padding-top:24px; color:rgba(255,255,255,.38); font-size:8px; font-weight:900; letter-spacing:.1em; text-transform:uppercase; }
+
+.launch-signature { padding:clamp(70px,8vw,120px) clamp(22px,8vw,130px); display:flex; align-items:flex-end; justify-content:space-between; gap:50px; color:white; background:#071a10; }
+.launch-signature > div { max-width:780px; }
+.launch-signature h2 { margin:14px 0 18px; font:800 clamp(46px,6vw,86px)/.9 var(--display); letter-spacing:-.06em; text-transform:uppercase; }
+.launch-signature h2 em { color:var(--gold); font-style:normal; }
+.launch-signature p { max-width:650px; color:rgba(255,255,255,.62); line-height:1.7; }
+.launch-signature__points { display:flex; flex-wrap:wrap; gap:12px 20px; margin-top:28px; color:rgba(255,255,255,.58); font-size:10px; font-weight:800; letter-spacing:.06em; text-transform:uppercase; }
+.launch-signature__points span { display:inline-flex; align-items:center; gap:7px; }
+.launch-signature__points svg { color:var(--gold); }
+
+@media (max-width: 1100px) {
+  .launch-lineup__grid { grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width: 900px) {
+  .launch-hero { grid-template-columns:1fr; }
+  .launch-hero__mark { position:absolute; right:-130px; width:420px; opacity:.4; }
+  .launch-signature { align-items:flex-start; flex-direction:column; }
+}
+@media (max-width: 620px) {
+  .launch-hero { min-height:620px; padding:66px 18px; }
+  .launch-hero h1 { font-size:clamp(54px,15vw,76px); }
+  .launch-hero__actions { flex-direction:column; }
+  .launch-hero__actions .button { width:100%; }
+  .launch-hero__mark { right:-210px; width:390px; opacity:.22; }
+  .launch-lookbook { padding:60px 14px; }
+  .launch-lineup { padding:60px 18px; }
+  .launch-lineup__grid { grid-template-columns:1fr; }
+  .launch-piece { min-height:260px; }
+  .launch-signature { padding:60px 18px; }
+  .launch-signature .button { width:100%; }
+}
