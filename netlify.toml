@@ -12,12 +12,6 @@
 
 
 [[redirects]]
-  from = "/lawnbrain"
-  to = "https://lawnbrain.base44.app/home?source=lawnladco"
-  status = 302
-  force = true
-
-[[redirects]]
   from = "/scan"
   to = "https://lawnbrain.base44.app/register?source=lawnladco"
   status = 302
@@ -25,6 +19,6 @@
 
 [[redirects]]
   from = "/lawnleague"
-  to = "https://lawnbrain.base44.app/league?source=lawnladco"
-  status = 302
+  to = "/lawn-league"
+  status = 301
   force = true
