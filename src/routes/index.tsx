@@ -54,8 +54,8 @@ export const Route = createFileRoute('/')({
   component: HomePage,
 })
 
-const LAWNBRAIN_URL = 'https://lawnbrain.base44.app/#/home?source=lawnladco'
-const LAWNLEAGUE_URL = 'https://lawnbrain.base44.app/#/league?source=lawnladco'
+const LAWNBRAIN_URL = '/lawnbrain'
+const LAWNLEAGUE_URL = '/lawn-league'
 const LAWN_SCAN_URL = 'https://lawnbrain.base44.app/#/register?source=lawnladco'
 
 const services = [
@@ -143,7 +143,7 @@ const ecosystem = [
     description:
       'Upload photos or a short video, get an AI-assisted lawn assessment and turn it into a practical care plan.',
     href: LAWNBRAIN_URL,
-    action: 'Open LawnBrain',
+    action: 'Explore LawnBrain',
   },
   {
     icon: Trophy,
@@ -152,7 +152,7 @@ const ecosystem = [
     description:
       'Track your Lawn Rating, measure improvement and see how your lawn stacks up from suburb to Australia.',
     href: LAWNLEAGUE_URL,
-    action: 'Join Lawn League',
+    action: 'Explore Lawn League',
   },
   {
     icon: PackageOpen,
