@@ -7,11 +7,9 @@ import {
   Gauge,
   MapPinned,
   Medal,
-  Sparkles,
   Target,
   TrendingUp,
   Trophy,
-  Users,
 } from 'lucide-react'
 
 export const Route = createFileRoute('/lawn-league')({
