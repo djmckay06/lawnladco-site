@@ -7,7 +7,6 @@ import {
   Camera,
   CheckCircle2,
   CloudSun,
-  Leaf,
   LineChart,
   ScanLine,
   Sparkles,
