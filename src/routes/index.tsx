@@ -264,10 +264,10 @@ function HomePage() {
               <Facebook size={16} />
             </a>
             <a
-              href="https://www.tiktok.com/@thelawnkid"
+              href="https://www.tiktok.com/@lawnladco"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="TikTok (@thelawnkid)"
+              aria-label="TikTok (@lawnladco)"
             >
               <TikTokIcon size={16} />
             </a>
@@ -328,10 +328,10 @@ function HomePage() {
                 <Facebook size={18} />
               </a>
               <a
-                href="https://www.tiktok.com/@thelawnkid"
+                href="https://www.tiktok.com/@lawnladco"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="TikTok (@thelawnkid)"
+                aria-label="TikTok (@lawnladco)"
               >
                 <TikTokIcon size={18} />
               </a>
@@ -671,7 +671,7 @@ function HomePage() {
             <div className="equipment-reel-card__header">
               <div className="equipment-reel-card__badge">
                 <TikTokIcon size={15} />
-                <span>@thelawnkid</span>
+                <span>@lawnladco</span>
               </div>
               <span className="equipment-reel-card__status">
                 <span className="equipment-reel-card__pulse" />
@@ -682,7 +682,7 @@ function HomePage() {
             <div className="equipment-reel-card__player-wrap">
               <iframe
                 src="https://www.tiktok.com/player/v1/7457363623799688456?autoplay=1&loop=1&music_info=0&description=0&rel=0"
-                title="TikTok Reel - Lawn renovation and scarify by @thelawnkid"
+                title="TikTok Reel - Lawn renovation and scarify by @lawnladco"
                 className="equipment-reel-card__iframe"
                 allow="autoplay; fullscreen; encrypted-media; picture-in-picture; accelerometer; clipboard-write"
                 allowFullScreen
@@ -696,11 +696,11 @@ function HomePage() {
                 <p>Watch commercial renovation equipment removing thatch and prepping the lawn turf.</p>
               </div>
               <a
-                href="https://www.tiktok.com/@thelawnkid/video/7457363623799688456"
+                href="https://www.tiktok.com/@lawnladco/video/7457363623799688456"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="equipment-reel-card__link"
-                aria-label="View original reel on TikTok (@thelawnkid)"
+                aria-label="View original reel on TikTok (@lawnladco)"
               >
                 <span>Watch on TikTok</span>
                 <ArrowRight size={14} />
@@ -819,10 +819,10 @@ function HomePage() {
               <Facebook />
             </a>
             <a
-              href="https://www.tiktok.com/@thelawnkid"
+              href="https://www.tiktok.com/@lawnladco"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="TikTok (@thelawnkid)"
+              aria-label="TikTok (@lawnladco)"
             >
               <TikTokIcon />
             </a>
