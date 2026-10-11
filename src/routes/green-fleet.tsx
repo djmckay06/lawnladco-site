@@ -86,9 +86,9 @@ function GreenFleetPage() {
           </nav>
 
           <div className="hidden items-center gap-3 lg:flex">
-            <a href="mailto:info@lawnladco.com" className="inline-flex items-center gap-2 text-sm font-semibold">
+            <a href="mailto:info@lawnladco.com.au" className="inline-flex items-center gap-2 text-sm font-semibold">
               <Mail size={16} className="text-[#d6ac47]" />
-              info@lawnladco.com
+              info@lawnladco.com.au
             </a>
           </div>
 
@@ -138,7 +138,7 @@ function GreenFleetPage() {
                 Explore the project <ArrowRight size={18} />
               </a>
               <a
-                href="mailto:info@lawnladco.com?subject=Green%20Fleet%20Partnership"
+                href="mailto:info@lawnladco.com.au?subject=Green%20Fleet%20Partnership"
                 className="inline-flex min-h-12 items-center gap-2 border border-white/25 px-6 text-sm font-extrabold uppercase tracking-[.08em] transition hover:border-[#d6ac47] hover:text-[#efcc73]"
               >
                 Partner with us
@@ -280,7 +280,7 @@ function GreenFleetPage() {
                 ))}
               </div>
               <a
-                href="mailto:info@lawnladco.com?subject=Green%20Fleet%20Partnership"
+                href="mailto:info@lawnladco.com.au?subject=Green%20Fleet%20Partnership"
                 className="mt-6 inline-flex min-h-12 items-center gap-2 bg-[#0c2919] px-6 text-sm font-extrabold uppercase tracking-[.08em] !text-[#d6ac47] transition hover:bg-[#173f27] hover:!text-[#efcc73]"
               >
                 Become a Green Fleet partner <ArrowRight size={18} />
@@ -298,7 +298,7 @@ function GreenFleetPage() {
             <p className="mt-3 max-w-2xl text-white/60">Follow the Green Fleet project as it moves from concept to working equipment, measured data and real regional jobs.</p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <a href="mailto:info@lawnladco.com" className="inline-flex items-center gap-2 border border-white/20 px-5 py-3 font-semibold hover:border-[#d6ac47]">
+            <a href="mailto:info@lawnladco.com.au" className="inline-flex items-center gap-2 border border-white/20 px-5 py-3 font-semibold hover:border-[#d6ac47]">
               <Mail size={18} /> Email us
             </a>
             <a href="tel:0431913822" className="inline-flex items-center gap-2 border border-white/20 px-5 py-3 font-semibold hover:border-[#d6ac47]">
