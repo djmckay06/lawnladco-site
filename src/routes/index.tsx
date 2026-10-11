@@ -731,7 +731,7 @@ function HomePage() {
 
           <div className="contact-list">
             <a href="tel:0431913822"><span><Phone /></span><div><small>Call or text</small><strong>0431 913 822</strong></div></a>
-            <a href="mailto:info@lawnladco.com"><span><Mail /></span><div><small>Email</small><strong>info@lawnladco.com</strong></div></a>
+            <a href="mailto:info@lawnladco.com.au"><span><Mail /></span><div><small>Email</small><strong>info@lawnladco.com.au</strong></div></a>
             <div><span><MapPin /></span><div><small>Service area</small><strong>Innes Park to Headlands</strong></div></div>
           </div>
 
