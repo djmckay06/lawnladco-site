@@ -72,7 +72,7 @@ function ShopPage() {
           <div className="launch-hero__actions">
             <a href="#collection" className="button button--gold">See the collection <ArrowRight size={17} /></a>
             <a
-              href="mailto:info@lawnladco.com?subject=Lawns%20%26%20Lifestyle%20Early%20Access"
+              href="mailto:info@lawnladco.com.au?subject=Lawns%20%26%20Lifestyle%20Early%20Access"
               className="button button--ghost"
             >
               Early access <Mail size={17} />
@@ -144,7 +144,7 @@ function ShopPage() {
           </div>
         </div>
         <a
-          href="mailto:info@lawnladco.com?subject=Lawns%20%26%20Lifestyle%20Early%20Access"
+          href="mailto:info@lawnladco.com.au?subject=Lawns%20%26%20Lifestyle%20Early%20Access"
           className="button button--gold"
         >
           Join early access <ArrowRight size={17} />
