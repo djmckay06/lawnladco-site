@@ -2,6 +2,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import {
   ArrowRight,
   Award,
+  GraduationCap,
   BadgeCheck,
   Brain,
   CalendarCheck,
@@ -56,6 +57,7 @@ export const Route = createFileRoute('/')({
 
 const LAWNBRAIN_URL = '/lawnbrain'
 const LAWNLEAGUE_URL = '/lawn-league'
+const ACADEMY_URL = 'https://academy.lawnladco.com.au'
 const LAWN_SCAN_URL = 'https://lawnbrain.base44.app/#/register?source=lawnladco'
 
 const services = [
@@ -155,6 +157,15 @@ const ecosystem = [
     action: 'Explore Lawn League',
   },
   {
+    icon: GraduationCap,
+    eyebrow: 'Lawn Lad Academy',
+    title: 'Learn it. Grow it. Master it.',
+    description:
+      'Learn practical lawn care with six beginner lessons, field activities, quizzes and a certificate of completion.',
+    href: ACADEMY_URL,
+    action: 'Explore the Academy',
+  },
+  {
     icon: PackageOpen,
     eyebrow: 'Lawn Lad Products',
     title: 'A simpler product system.',
@@ -240,6 +251,7 @@ function HomePage() {
           <a href="#packages">Packages</a>
           <a href={LAWNBRAIN_URL}>LawnBrain</a>
           <a href={LAWNLEAGUE_URL}>Lawn League</a>
+          <a href={ACADEMY_URL}>Academy</a>
           <a href="/green-fleet">Green Fleet</a>
           <a href="/shop">Shop</a>
           <a href="#contact">Contact</a>
@@ -302,6 +314,7 @@ function HomePage() {
             <a href="#packages" onClick={closeMenu}>Packages</a>
             <a href={LAWNBRAIN_URL} onClick={closeMenu}>LawnBrain</a>
             <a href={LAWNLEAGUE_URL} onClick={closeMenu}>Lawn League</a>
+            <a href={ACADEMY_URL} onClick={closeMenu}>Lawn Lad Academy</a>
             <a href="/green-fleet" onClick={closeMenu}>Green Fleet</a>
             <a href="/shop" onClick={closeMenu}>Shop</a>
             <a href="#hire" onClick={closeMenu}>Equipment hire</a>
