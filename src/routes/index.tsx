@@ -805,6 +805,7 @@ function HomePage() {
           <a href={LAWNBRAIN_URL}>LawnBrain</a>
           <a href={LAWNLEAGUE_URL}>Lawn League</a>
           <a href="/shop">Shop</a>
+          <a href="/shop#adventures">Children’s books &amp; cards</a>
           <a href="#hire">Equipment hire</a>
           <a href="#contact">Contact</a>
         </div>
