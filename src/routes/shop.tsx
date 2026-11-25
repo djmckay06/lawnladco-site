@@ -107,7 +107,7 @@ function ShopPage() {
             <span className="adventures-label">Children’s books &amp; collector cards</span>
             <h2 id="adventures-title">Lawn Lad<br /><em>Adventures</em></h2>
             <h3>Book one · The First Cut</h3>
-            <p>Baylin has his first paying customer and a plan for ruler-straight stripes. But why are there two bare patches in Mrs Bell’s lawn? Evie spots a clue, Millie gives it a pat and Marli comes up with a mouthful of last summer.</p>
+            <p>Baylin has his first paying customer and a plan for ruler-straight stripes. But why are there two bare patches in Mrs Stout’s lawn? Evie spots a clue, Millie gives it a pat and Marli comes up with a mouthful of last summer.</p>
             <p>A Bargara Headlands read-aloud about listening to your neighbours and finding out what makes a backyard theirs.</p>
             <a className="button button--gold" href="#story-preview" onClick={() => document.querySelector<HTMLDetailsElement>('#story-preview')?.setAttribute('open', '')}>Peek inside the book</a>
           </div>
@@ -116,7 +116,7 @@ function ShopPage() {
           <summary>Read the opening two pages</summary>
           <div>{[
             ['first-page', 'Baylin ties his boot twice before his first job. Nae Nae gives him a little green notebook.'],
-            ['second-page', 'Mrs Bell wants the yard ready for her grandchildren. Baylin imagines perfect stripes.'],
+            ['second-page-stout', 'Mrs Stout wants the yard ready for her grandchildren. Baylin imagines perfect stripes.'],
           ].map(([file, description]) => <a key={file} href={`/adventures/${file}.webp`}><img src={`/adventures/${file}.webp`} alt={description} loading="lazy" /></a>)}</div>
         </details>
         <div className="adventures-cards">
